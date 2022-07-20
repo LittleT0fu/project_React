@@ -7,17 +7,18 @@ import MyCustomTextWith from './components/MyCustomTextWith';
 import Count from "./components/Count";
 import InputText from "./components/InputText";
 import UserNameandPassword from "./components/UserNameandPassword";
+import UsernamePassword from "./components/UsernamePassword";
 
 const App = () => {
   return (
-    <View style={styles.container}>
+    <View >
       {/* <Logo /> */}
       {/* <User /> */}
       {/* <LotsOfGreeting/> */}
       {/* <MyCustomTextWith/> */}
       {/* <Count/> */}
       {/* <InputText/> */}
-      <UserNameandPassword/>
+      <UsernamePassword/>
      
     </View>
   );
