@@ -26,20 +26,13 @@ const TouchableExample = () => {
 
         </TouchableNativeFeedback>
 
-        <TouchableHighlight onPress={()=>onPress('TouchableNativeFeedback Pressed')}>
-            <View style={styles.button}>
+        <TouchableHighlight style={styles.button} onPress={()=>onPress('TouchableNativeFeedback Pressed')}>
                 <Text>TouchableHighlight(only android)</Text>
-
-            </View>
-
         </TouchableHighlight>
 
 
-        <TouchableOpacity onPress={()=>onPress('TouchableNativeFeedback Pressed')}>
-            <View style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={()=>onPress('TouchableNativeFeedback Pressed')}>
                 <Text>TouchableOpacity(only android)</Text>
-
-            </View>
 
         </TouchableOpacity>
 
