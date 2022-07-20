@@ -8,18 +8,27 @@ import Count from "./components/Count";
 import InputText from "./components/InputText";
 import UserNameandPassword from "./components/UserNameandPassword";
 import UsernamePassword from "./components/UsernamePassword";
+import AlertExample from "./components/AlertExample";
+import ImageWithTextInput from "./components/ImageWithTextInput";
+import ButtonExample from "./components/ButtonExample";
+import TouchableExample from "./components/TouchableExample";
+
+
 
 const App = () => {
   return (
-    <View >
+    <View style={styles.container} >
       {/* <Logo /> */}
       {/* <User /> */}
       {/* <LotsOfGreeting/> */}
       {/* <MyCustomTextWith/> */}
       {/* <Count/> */}
       {/* <InputText/> */}
-      <UsernamePassword/>
-     
+      {/* <UsernamePassword/> */}
+     {/* <AlertExample/> */}
+     {/* <ImageWithTextInput/> */}
+     {/* <ButtonExample/> */}
+     <TouchableExample/>
     </View>
   );
 };
