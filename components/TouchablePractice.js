@@ -5,7 +5,7 @@ const TouchablePractice = () => {
   return (
     <View style={styles.container}>
       {/* Facebook touch button */}
-       <View></View>
+       <View>
         <TouchableOpacity>
           <View style={[styles.buttonFacebookStyle]}>
             <Image
