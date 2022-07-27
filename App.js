@@ -13,12 +13,14 @@ import ImageWithTextInput from "./components/ImageWithTextInput";
 import ButtonExample from "./components/ButtonExample";
 import TouchableExample from "./components/TouchableExample";
 import TouchablePractice from "./components/TouchablePractice";
-
+import DynamicStyle from "./components/DynamicStyle";
+import ModalExample from "./components/ModalExample";
+import ModalPractice from "./components/ModalPractice";
 
 
 const App = () => {
   return (
-    <View >
+    <View style={styles.container}>
       {/* <Logo /> */}
       {/* <User /> */}
       {/* <LotsOfGreeting/> */}
@@ -30,7 +32,10 @@ const App = () => {
      {/* <ImageWithTextInput/> */}
      {/* <ButtonExample/> */}
      {/* <TouchableExample/> */}
-     <TouchablePractice/>
+     {/* <TouchablePractice/> */}
+     {/* <DynamicStyle/> */}
+     {/* <ModalExample/> */}
+     <ModalPractice/>
     </View>
   );
 };
