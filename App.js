@@ -18,7 +18,7 @@ import TouchablePractice from "./components/TouchablePractice";
 
 const App = () => {
   return (
-    <View style={styles.container} >
+    <View >
       {/* <Logo /> */}
       {/* <User /> */}
       {/* <LotsOfGreeting/> */}

@@ -1,43 +1,48 @@
-import { View, Text, TouchableOpacity, Image , StyleSheet } from "react-native";
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  Image,
+  StyleSheet,
+  SafeAreaView,
+} from "react-native";
 import React from "react";
 
 const TouchablePractice = () => {
   return (
-    <View style={styles.container}>
-      {/* Facebook touch button */}
-       <View>
-        <TouchableOpacity>
-          <View style={[styles.buttonFacebookStyle]}>
-            <Image
-              source={require("../assets/facebook.png")}
-               style={styles.buttonImageIconStyle}
-            />
-            <View style={styles.buttonIconSeparatorStyle}/>
-            <Text style={styles.buttonTextStyle}>
-                Login Using Facebook
-            </Text>
+    <SafeAreaView style={{flex : 1}}>
+      <View style={styles.container}>
+        {/* Facebook touch button */}
+        <View>
+          <TouchableOpacity activeOpacity={0.5}>
+            <View style={[styles.buttonFacebookStyle]}>
+              <Image
+                source={require("../assets/facebook.png")}
+                style={styles.buttonImageIconStyle}
+              />
+              <View style={styles.buttonIconSeparatorStyle} />
+              <Text style={styles.buttonTextStyle}>Login Using Facebook</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
 
-          </View>
-        </TouchableOpacity>
-      </View>
-
-
-    {/* Gplus touch button */}
-      <View>
-        <TouchableOpacity>
-          <View style={[styles.buttonGPlusStyle]}>
-            <Image
-              source={require("../assets/google-plus.png")}
-               style={styles.buttonImageIconStyle}
-            />
-            <View style={styles.buttonIconSeparatorStyle}/>
-            <Text style={styles.buttonTextStyle}>
+        {/* Gplus touch button */}
+        <View>
+          <TouchableOpacity>
+            <View style={[styles.buttonGPlusStyle]}>
+              <Image
+                source={require("../assets/google-plus.png")}
+                style={styles.buttonImageIconStyle}
+              />
+              <View style={styles.buttonIconSeparatorStyle} />
+              <Text style={styles.buttonTextStyle}>
                 Login Using Google Plus
-            </Text>
-          </View>
-        </TouchableOpacity>
+              </Text>
+            </View>
+          </TouchableOpacity>
+        </View>
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 
@@ -81,7 +86,6 @@ const styles = StyleSheet.create({
     color: "#fff",
     marginBottom: 4,
     marginLeft: 10,
-    marginRight:100,
   },
   buttonIconSeparatorStyle: {
     backgroundColor: "#fff",
