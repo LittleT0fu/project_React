@@ -12,6 +12,7 @@ import AlertExample from "./components/AlertExample";
 import ImageWithTextInput from "./components/ImageWithTextInput";
 import ButtonExample from "./components/ButtonExample";
 import TouchableExample from "./components/TouchableExample";
+import TouchablePractice from "./components/TouchablePractice";
 
 
 
@@ -28,7 +29,8 @@ const App = () => {
      {/* <AlertExample/> */}
      {/* <ImageWithTextInput/> */}
      {/* <ButtonExample/> */}
-     <TouchableExample/>
+     {/* <TouchableExample/> */}
+     <TouchablePractice/>
     </View>
   );
 };
